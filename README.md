@@ -1,0 +1,2 @@
+# exercicios
+ Python - Exercícios Feitos.
