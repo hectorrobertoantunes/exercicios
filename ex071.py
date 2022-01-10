@@ -14,11 +14,12 @@ while True:
         p_barato = valor_p
     if valor_p < p_barato:
         np_barato = produto
+        p_barato = valor_p
     if valor_p > 1000:
         p_mil += 1
     ask = input('Quer continuar comprando [N/S]? ').upper().strip()
     if ask == 'N':
         break
 print(f'O total gasto em compras foi de {total:.2f}.')
-print(f'O produto mais barato foi {np_barato}.')
+print(f'O produto mais barato foi {np_barato}, cujo o preço é R${p_barato:.2f} reais.')
 print(f'{p_mil} Custaram mais de R$ 1000,00 reais!')
